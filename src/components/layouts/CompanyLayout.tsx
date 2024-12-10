@@ -36,12 +36,7 @@ const CompanyLayout: React.FC<CompanyLayoutProps> = () => {
           </List>
       </div>
       <div className="w-[calc(100%-270px)]">
-        <div className="h-[82px]">
-          header
-        </div>
-        <div className="h-[calc(100%-82px)] overflow-auto">
-          <Outlet />
-        </div>            
+          <Outlet />       
       </div>
     </div>
   );
