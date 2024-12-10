@@ -55,6 +55,5 @@ export default function AppRoutes() {
         <Route path="/job/:id" element={<RequirementDetails />} />
       </Routes>
     </Router>
-
   );
 }

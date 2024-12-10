@@ -128,16 +128,15 @@ const MyVendors = () => {
       <Typography variant="body2">
         Popular: Twitter, Microsoft, Apple, Facebook
       </Typography>
-
-      <Divider />
+      <div className="my-2">
+        <Divider />
+      </div>
 
       {/* Sidebar and Companies List */}
       <Grid container spacing={4}>
         {/* Sidebar */}
         <Grid item xs={12} md={2}>
-          <Typography variant="h6" className="mb-2">
-            Industry
-          </Typography>
+          <Typography variant="h6">Industry</Typography>
           {[
             "Advertising (43)",
             "Business Service (4)",
@@ -170,9 +169,17 @@ const MyVendors = () => {
 
         {/* Company Cards */}
         <Grid item xs={12} md={10}>
-          <Typography variant="h5" className="mb-4">
-            All Vendors
-          </Typography>
+          <div className="flex my-2 align-center justify-between">
+            <Typography variant="h5" className="mb-4">
+              All Vendors
+            </Typography>
+            <div>
+              {" "}
+              <Typography variant="body2" className="mb-4">
+                Sort by:
+              </Typography>
+            </div>
+          </div>
           <Grid container spacing={3}>
             {companies.map((company, idx) => (
               <Grid item xs={12} sm={6} md={4} key={idx}>
