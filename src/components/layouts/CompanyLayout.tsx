@@ -12,10 +12,10 @@ interface CompanyLayoutProps {}
 const CompanyLayout: React.FC<CompanyLayoutProps> = () => {
   const menuItems = [
     { text: "Dashboard", icon: <DashboardIcon />, id: 0, path:'/company/dashboard' },
-    { text: "My Applications", icon: <WorkIcon />, id: 1, path:'/company/myapp' },
-    { text: "Find requirements", icon: <PersonIcon />, id: 2, path:'/company/findrequirements' },
-    { text: "My Clients", icon: <WorkIcon />, id: 3, path:'/company/myclients' },
-    { text: "Find Clients", icon: <EventIcon />, id: 4, path:'/company/findclients' },
+    { text: "My Requirements", icon: <WorkIcon />, id: 1, path:'/company/myapp' },
+    { text: "My Vendors", icon: <PersonIcon />, id: 2, path:'/company/findrequirements' },
+    { text: "Find Vendors", icon: <WorkIcon />, id: 3, path:'/company/myclients' },
+    // { text: "Find Clients", icon: <EventIcon />, id: 4, path:'/company/findclients' },
     { text: "Messages", icon: <MessageIcon />, id: 5, path:'/company/messages' },
   ];
 
